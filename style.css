@@ -1,0 +1,39 @@
+body{
+    background: oldlace
+}
+
+.container_1{
+    background: lightblue;
+    border: 3px solid darkblue;
+    border-radius: 5px;
+    display: grid;
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: minmax(100px, 1fr) 1fr 1fr;
+    /*grid-template-rows: 50px 100px 150px;*/
+    grid-auto-rows: 50px;
+}
+
+.container_1 div{
+    background: lightseagreen;
+    border: 2px solid darkgreen;
+    border-radius: 6px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container_2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /*auto-fit ocuparia todo el espacio, aunque falten elementos*/
+    column-gap: 16px;
+    row-gap: 32px;
+    /*gap 32px 16px gap de fila y columana en una sola linea*/
+
+    /*max-width: 800px*
+    marging:0 auto/
+}
